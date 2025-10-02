@@ -1,1 +1,3 @@
-print("hello world")
+# entors de desenvoluments 
+
+## configuracion github Vscode
