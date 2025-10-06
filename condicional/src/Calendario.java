@@ -6,9 +6,9 @@ public class Calendario {
     //ENTRADAS/VARAIBLES
         int dias;
         System.out.println("INGRESA UN MES: ");
-        String mes = scanner.next();
+        String mes = scanner.next().toLowerCase();
 
-        switch (mes.toLowerCase()) {
+        switch (mes) {
             case "enero":
             case "marzo":
             case "mayo":
@@ -37,5 +37,5 @@ public class Calendario {
             System.out.println("El mes de " + mes + " tiene " + dias + " días.");
         }
         scanner.close();
-    }            
+    }
 }
