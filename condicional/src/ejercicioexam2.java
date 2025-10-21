@@ -9,36 +9,47 @@ public class ejercicioexam2 {
 
     //el programa debe mostrar cuantas entradas se han comprado y el precio total con un 21% de IVA incluido
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner Us = new Scanner(System.in);
         //entradas/variables
         System.out.println("///////////////////////////////////////////Festival//////////////////////////////////////////////");
-        final double PrecioBase = 25;
-        final double descuento = 0;
-        final double descuento1 = 0.10;
-        final double descuento2 = 0.15;
-        Double PrecioT;
+    //VARIABLES
+    final double PrecioBase = 35;
+    final double descuento1 = 0.10;
+    final double descuento2 = 0.15;
+    final double IVA = 0.21;
+    double PrecioTotal;
+    System.out.println("Cuantas entradas desea comprar?");
+        double cantidad = Us.nextDouble();
 
-        System.out.println("¿Cuantas entradas desea comprar? ");
-            int numero = scanner.nextInt();
-
-            if (numero >= 0 && numero <= 1) {
-                System.err.print("precio de la entrada: " + PrecioBase);
-                
-                
-                }else if (numero >=2 && numero <= 3 ) {
-                    PrecioT = PrecioBase * descuento1;
-                    System.out.print("precio de la entrada: " + PrecioT);
-                
-                }else if (numero >=3 && numero <= 4) {
-                    PrecioT = PrecioBase * descuento2;
-                    System.out.println("precio de la entrada: " + PrecioT);
-            scanner.close();
-
-                
-                
-            }
+        if (cantidad == 1) {
+            System.out.println("TICKET");
+            PrecioTotal = (cantidad*PrecioBase)+(IVA*PrecioBase) ;
+            System.out.print("Cantidad de entradas "+ cantidad + " PRECIO TOTAL: $"+ PrecioTotal);
+                System.out.println("\n//////////////////////////GRACIAS POR SU COMPRA/////////////////");
 
 
+        } else if (cantidad == 2) {
+            System.out.println("|||||||||||||||||||||||||||TICKET|||||||||||||||||||||||||||||||");
+            double entrada1 = PrecioBase;
+            double entrada2 = PrecioBase*(1 - descuento1);
+            System.out.printf("Cantidad de en entradas " + cantidad + " \nprecio entrada 1: " + entrada1 + " \nprecio entrada 2: " + entrada2);
+            PrecioTotal = (entrada1+entrada2)+(IVA*PrecioBase);
+            System.out.print("\nPRECIO TOTAL + IVA $ "+PrecioTotal);
+                System.out.println("\n//////////////////////////GRACIAS POR SU COMPRA/////////////////");
 
+
+        } else if (cantidad == 3){
+            System.out.println("|||||||||||||||||||||||||||TICKET|||||||||||||||||||||||||||||||");
+            double entrada1 = PrecioBase*(1-descuento2);
+            System.out.printf("Cantidad de en entradas "+cantidad+"\n precio entrada 1: "+entrada1+"\n precio entrada 2: "+entrada1+"\n precio entrada 3: "+ entrada1);
+            PrecioTotal =  (entrada1*3) + (entrada1*IVA)*3;
+            System.out.print("\nPRECIO TOTAL + IVA $ "+PrecioTotal);
+                System.out.println("\n//////////////////////////GRACIAS POR SU COMPRA/////////////////");
+        }else {
+                        System.out.println("que coño pasa");
+        
+        Us.close();
+        }
     }
 }
+
