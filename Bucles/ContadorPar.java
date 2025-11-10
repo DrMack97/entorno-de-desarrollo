@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejeN3 {
+public class ContadorPar {
     // ⦁ Programa que entra un número natural N y muestra los números pares
     // comprendidos entre 1 y N.
     // Para ello utilice un contador sumando de 1 en 1.
