@@ -1,10 +1,10 @@
 package com.utils.forms;
 
 public class FormsBuilder {
-    public static void printTitle(String title) {
-        System.out.println(title);
-        title.length();
-        for (int i = 0; i < title.length(); i++) {
+    public static void printMsg(String msg, char c) {
+        System.out.println(msg);
+        msg.length();
+        for (int i = 0; i < msg.length(); i++) {
             System.out.print("=");
         }
     }

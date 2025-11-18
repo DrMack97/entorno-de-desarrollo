@@ -2,18 +2,28 @@ import com.utils.forms.FormsBuilder;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        String name, mail;
+        int age;
+        double quota;
 
-        FormsBuilder.printTitle("\nformulario de usuario ");
+        // Input data
+        FormsBuilder.printValue("nom", mail);
+        FormsBuilder.printValue("edat", Integer.toString(age));
+        FormsBuilder.printValue("email", name);
+        FormsBuilder.printValue("quota", Double.toString(quota));
 
-        FormsBuilder.printValue("\nNombre","Juanito Perez");
-        FormsBuilder.printValue("Edad","30");
-        FormsBuilder.printValue("correo electronico", "J.Perez@gmail.com");
-        FormsBuilder.divider('-');
-        FormsBuilder.printTitle("informacion adicional ");
-        FormsBuilder.printValue("\nPais", "España");
-        FormsBuilder.printValue("ciudad", "barcelona");
-        FormsBuilder.divider('-');
-        FormsBuilder.printValue("Registro Completado", "gracias por registrarte");
+        FormsBuilder.getValueString("validacion");
 
+        // hacer logica que torna a verificar si los datos con correctos 
+
+        FormsBuilder.divider(separadorChar);
+
+        FormsBuilder.divider(separadorChar);
+
+        FormsBuilder.printValue("el socio", name);
+        double discount = discounts.calcDiscount(quota);
+        FormsBuilder.printValue("descompte", Double.toString(discount));
+
+        // Hacer en casita
     }
 }
