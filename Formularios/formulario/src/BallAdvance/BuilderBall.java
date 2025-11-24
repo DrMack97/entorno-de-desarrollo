@@ -39,6 +39,7 @@ public class BuilderBall {
                 System.out.print(" ");
             }
         }
+                System.out.println();
         //linea inferior 
         for (int i = 0; i < longitudPista; i++) {
             System.out.print("=");
@@ -52,16 +53,16 @@ public class BuilderBall {
         int pasos;
 
         while (true) {
-            System.out.println("Cuantos pasos quieres avanzar? (1-3) ");
+            System.out.println("Cuantos pasos quieres avanzar? (1-5) ");
             // Verificar si el siguiente token es un numero
 
             pasos = sc.nextInt();
             // sc.nextLine(); //para limpiar el buffer
 
-            if (pasos >= 1 && pasos <= 3) {
+            if (pasos >= 1 && pasos <= 5) {
                 break;
             } else {
-                System.out.println("Debe estar entre 1-3❌");
+                System.out.println("Debe estar entre 1-3 !!!");
                 sc.nextLine();
             }
         }

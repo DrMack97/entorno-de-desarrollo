@@ -35,6 +35,7 @@ public class Geometrica {
      * dibuja un cuadrado de asteriscos sin relleno
      * 
      * @param n es el lado del cuadrado
+     * 
      */
     static void cuadradoSinRelleno(int n) {
 
@@ -97,6 +98,7 @@ public class Geometrica {
         int opcion = 0;
         int dimension = 0;
 
+         
         do {
             menu();
             opcion = sc.nextInt();

@@ -25,6 +25,8 @@ public class trianguloFalse {
         System.out.println("lado c");
         int c = sc.nextInt();
 
+        System.out.println("Lados: a= " + a + " b= " + b + " c= " + c);
+
         if (validacionTriangulo(a, b, c)) {
             System.out.println("Correcto!");
         }else{
