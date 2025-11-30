@@ -34,7 +34,6 @@ public class socioDePan {
         // entrada de datos
         socioPa.setTituloPrincipal("Registra tus datos!",'='); 
                                                                             // cuidado con el uso correcto es ''
-
         String nombre = socioPa.getValueString("Nombre");
         String edad = socioPa.getValueInt("Edad");                  //debe ser int
         String email = socioPa.getValueString("Email");

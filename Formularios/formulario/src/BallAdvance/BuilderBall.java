@@ -39,6 +39,8 @@ public class BuilderBall {
                 System.out.print(" ");
             }
         }
+        System.out.println();
+        
         //linea inferior 
         for (int i = 0; i < longitudPista; i++) {
             System.out.print("=");

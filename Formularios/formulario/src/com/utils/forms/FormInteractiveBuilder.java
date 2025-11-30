@@ -7,11 +7,11 @@ public class FormInteractiveBuilder {
     private Scanner sc;
 
     public FormInteractiveBuilder(){
-        this.tieneTituloPrincipal = false;
-        this.sc = new Scanner(System.in);
+        this.tieneTituloPrincipal = false; this.sc = new Scanner(System.in);
+        
     }
         // Método para establecer título principal con carácter personalizable
-    public FormInteractiveBuilder setTituloPrincipal(String titulo,char tituloSubrayado) {
+    public FormInteractiveBuilder setTituloPrincipal(String titulo, char tituloSubrayado) {
         if(!tieneTituloPrincipal){
             System.out.println("\n"+titulo);
             System.out.println(crearLinea(tituloSubrayado,titulo.length()));
@@ -19,7 +19,7 @@ public class FormInteractiveBuilder {
         }
         return this;
     }
-    public FormInteractiveBuilder setTituloPrincipal(String titulo){
+    public FormInteractiveBuilder setTituloPrincipal2 (String titulo){
         return setTituloPrincipal(titulo,'=');
     }
     public FormInteractiveBuilder agregarSeccion(String tituloSeccion, char tituloSubrayado){

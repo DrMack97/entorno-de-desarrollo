@@ -7,8 +7,6 @@ public class formularioInteractivo {
 
         FormInteractiveBuilder pruebaU = new FormInteractiveBuilder();
 
-        
-
         pruebaU.setTituloPrincipal("Formulario de registro de usuario", '*');
 
         String nombre = pruebaU.getValueString("Nombre");
@@ -30,7 +28,7 @@ public class formularioInteractivo {
         System.out.println("=".repeat(50));
 
         FormInteractiveBuilder resumen = new FormInteractiveBuilder();
-        resumen.setTituloPrincipal("datos del usuario registrado", '+')
+        resumen.setTituloPrincipal("Datos del usuario registrado", '+')
                 .agregarCampo("NOMBRE COMPLETO", nombre)
                 .agregarCampo("EDAD", edad+" anys ")
                 .agregarCampo("Email ", correo)

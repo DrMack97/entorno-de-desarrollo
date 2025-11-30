@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "Formularios/formulario/src",
+        "ProyectoJava/src"
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
+}
