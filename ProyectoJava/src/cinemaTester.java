@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import console.CalcHelper;
 import console.tools.CalcInut;
@@ -7,7 +7,8 @@ import console.tools.CalcInut;
 
 public class cinemaTester {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+
+        //Scanner sc = new Scanner(System.in);
 
         CalcInut lec = new CalcInut();
         CalcHelper calc = new CalcHelper();
@@ -53,7 +54,7 @@ public class cinemaTester {
                 break;
         }
         
-    sc.close();
+    //sc.close();
     }
 
 }

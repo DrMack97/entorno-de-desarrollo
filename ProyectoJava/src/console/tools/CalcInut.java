@@ -6,6 +6,7 @@ public class CalcInut {
 
     public double op1Input(String mensaje){
         System.out.println(mensaje);
+        System.out.println(": ");
         Scanner sc = new Scanner(System.in);
         return sc.nextDouble();
     }
@@ -21,6 +22,7 @@ public class CalcInut {
     
     }
     //        private final Scanner sc = new Scanner(System.in);
+    
     /*public double op1Input(String mensaje){
         return sc.nextDouble();
     }
